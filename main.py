@@ -4,16 +4,7 @@ import wave
 import matplotlib.pyplot as plt
 
 
-def main():
-    print("Hello from shot!")
-
-
-if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("python main.py <sound file path>")
-        sys.exit(1)
-
-    path = sys.argv[1]
+def process_wav_file(path):
     # Open the WAV file
     with wave.open(path, 'rb') as wav_file:
         # Extract Raw Audio from Wav File
@@ -36,4 +27,16 @@ if __name__ == "__main__":
         plt.xlim(0, framerate / 2)
         plt.show()
 
+
+def main():
+    print("Hello from shot!")
+
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("python main.py <sound file path>")
+        sys.exit(1)
+
+    path = sys.argv[1]
+    process_wav_file(path)
     main()
