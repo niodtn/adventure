@@ -1,0 +1,143 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "uv": {
+        "pkg-path": "uv"
+      }
+    },
+    "hook": {},
+    "profile": {},
+    "options": {
+      "systems": [
+        "aarch64-darwin",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "x86_64-linux"
+      ],
+      "allow": {
+        "licenses": []
+      },
+      "semver": {}
+    }
+  },
+  "packages": [
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/pq0iffvr4h8mdlzx6ql29kn3ywyk3vpp-uv-0.6.2.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=0196c0175e9191c474c26ab5548db27ef5d34b05",
+      "name": "uv-0.6.2",
+      "pname": "uv",
+      "rev": "0196c0175e9191c474c26ab5548db27ef5d34b05",
+      "rev_count": 758135,
+      "rev_date": "2025-02-24T03:24:50Z",
+      "scrape_date": "2025-02-25T02:25:54Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.6.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/s9fwm8wa6k557qgzw8ggh3vzvc6mxghs-uv-0.6.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/68sa25y5d0blkmzlyaaq9i24cryza71k-uv-0.6.2.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=0196c0175e9191c474c26ab5548db27ef5d34b05",
+      "name": "uv-0.6.2",
+      "pname": "uv",
+      "rev": "0196c0175e9191c474c26ab5548db27ef5d34b05",
+      "rev_count": 758135,
+      "rev_date": "2025-02-24T03:24:50Z",
+      "scrape_date": "2025-02-25T02:25:54Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.6.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/k31jhfb6nc59c7aips07rcfi0lxr69gb-uv-0.6.2"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/jgbp07cx787hqzw6p9hr9sfj0mzxrfvl-uv-0.6.2.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=0196c0175e9191c474c26ab5548db27ef5d34b05",
+      "name": "uv-0.6.2",
+      "pname": "uv",
+      "rev": "0196c0175e9191c474c26ab5548db27ef5d34b05",
+      "rev_count": 758135,
+      "rev_date": "2025-02-24T03:24:50Z",
+      "scrape_date": "2025-02-25T02:25:54Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.6.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/lah75dkh3f0drbjw48qmjw55c2n95lvj-uv-0.6.2"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/kbvsv5hnrsayxwy68ra5pvs0lq5svyjs-uv-0.6.2.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=0196c0175e9191c474c26ab5548db27ef5d34b05",
+      "name": "uv-0.6.2",
+      "pname": "uv",
+      "rev": "0196c0175e9191c474c26ab5548db27ef5d34b05",
+      "rev_count": 758135,
+      "rev_date": "2025-02-24T03:24:50Z",
+      "scrape_date": "2025-02-25T02:25:54Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.6.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/v4jbhh5qy1ndlpn90gv42dx5v426r6nk-uv-0.6.2"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}
