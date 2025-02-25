@@ -7,7 +7,7 @@ def main():
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("python main.py <path>")
+        print("python main.py <sound file path>")
         sys.exit(1)
 
     path = sys.argv[1]
