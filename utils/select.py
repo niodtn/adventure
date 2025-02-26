@@ -24,6 +24,8 @@ def menu(options: list[str]) -> str:
         elif key == readchar.key.DOWN and current_index < len(options) - 1:
             current_index += 1
         elif key == readchar.key.ENTER:
+            print("\033[F" * len(options), end="")
+            print("\033[J", end="")
             return options[current_index]
 
         print("\033[F" * len(options), end="")

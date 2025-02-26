@@ -8,6 +8,7 @@ dependencies = [
     "colorlog>=6.9.0",
     "librosa>=0.10.2.post1",
     "readchar>=4.2.1",
+    "sounddevice>=0.5.1",
     "standard-aifc>=3.13.0",
     "standard-sunau>=3.13.0",
 ]

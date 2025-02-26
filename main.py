@@ -1,3 +1,6 @@
+# Dependencies
+# - sounddevice
+
 import logging
 import sys
 import wave
@@ -7,9 +10,11 @@ import librosa
 import librosa.display
 import matplotlib.pyplot as plt
 import numpy as np
+import sounddevice
 
 from utils import select
 
+# Logger
 handler = colorlog.StreamHandler()
 formatter = colorlog.ColoredFormatter(
     "%(log_color)s%(levelname)-8s %(message)s",
@@ -96,10 +101,22 @@ def process_wav_file_old(path):
 
 
 def main():
-    options = ["test1", "test2", "test3"]
-    selected = select.menu(options)
+    # Select Input & Output Device
+    devices = sounddevice.query_devices()
+    inputs = [d["name"] for d in devices if d["max_input_channels"] > 0]
+    outputs = [d["name"] for d in devices if d["max_output_channels"] > 0]
 
-    logging.info(f"User selected {selected}.")
+    print("\033[1m Select Input Device \033[0m")
+    selected_input = select.menu(inputs)
+    print("\033[F" * 1 + "\033[J", end="")  # clear
+    sys.stdout.flush()
+    logging.info(f"Selected Input Device is \033[1m{selected_input}\033[0m.")
+
+    print("\033[1m Select Output Device \033[0m")
+    selected_ouput = select.menu(outputs)
+    print("\033[F" * 1 + "\033[J", end="")  # clear
+    sys.stdout.flush()
+    logging.info(f"Selected Output Device is \033[1m{selected_ouput}\033[0m.")
 
 
 if __name__ == "__main__":
